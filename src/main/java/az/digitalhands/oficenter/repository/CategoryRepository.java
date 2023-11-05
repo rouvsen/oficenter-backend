@@ -8,6 +8,7 @@ import java.util.List;
 
 public interface CategoryRepository extends JpaRepository<Category, Long> {
 
-    List<CategoryWrapper> getAllCategories();
+    List<CategoryWrapper> getAllCategories(); //Handle it, just List<Category>
 
+//    List<Category> getCategoriesByCollectionId(Long collectionID);//if usable above, delete here
 }

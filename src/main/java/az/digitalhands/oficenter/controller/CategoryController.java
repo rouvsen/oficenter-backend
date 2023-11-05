@@ -39,6 +39,14 @@ public class CategoryController {
         return categoryService.getAllCategories();
     }
 
+//    @GetMapping("/getAll/{collectionId}")
+//    public ResponseEntity<?> getAllCategoriesWithCollectionId(
+//            @PathVariable("collectionId") Long collectionID
+//    ) {
+//        return categoryService.getAllCategoriesWithCollectionId(collectionID);
+//    }
+
+
     @DeleteMapping("/{userId}/delete/{categoryId}")
     public void deleteCategory(@PathVariable Long userId,
                                @PathVariable Long categoryId) {

@@ -110,4 +110,7 @@ public class CategoryService {
         } else ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
     }
 
+//    public ResponseEntity<?> getAllCategoriesWithCollectionId(Long collectionID) {
+//        return ResponseEntity.ok(categoryRepository.getCategoriesByCollectionId(collectionID));
+//    }
 }
